@@ -1,0 +1,196 @@
+{
+	"portfolio": [
+		{
+			"type": "npm package",
+			"stack": "node, react, vite, typescript",
+			"title": "react-highlightable-input ✨",
+			"description": "A custom react input component that allows highlighting of specific text as it is typed in.",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/react-highlightable-input",
+			"deploy": "https://npmjs.com/package/react-highlightable-input",
+			"style": {
+				"border": "2px solid #bd2e33"
+			},
+			"color": {
+				"color": "#bd2e33"
+			},
+			"buttonCSS": {
+				"border": "1px solid #bd2e33"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "ExpressJS, NodeJS, twitter-api-v2",
+			"title": "X-Bot: Automate tweets 🕊️",
+			"description": "A cron service to automatically generate and post tweets on X (Twitter)",
+			"platform": "GitLab",
+			"link": "https://gitlab.com/harshithrv/x-bot",
+			"deploy": "https://x-bot-vwrg.onrender.com/status",
+			"style": {
+				"border": "2px solid #1d9be9"
+			},
+			"color": {
+				"color": "#1d9be9"
+			},
+			"buttonCSS": {
+				"border": "1px solid #53BF9D"
+			}
+		},
+		{
+			"type": "discord app",
+			"stack": "ExpressJS, NodeJS, DiscordJS",
+			"title": "Levi - Discord Bot 🤖",
+			"description": "A Discord bot equipped with chatGPT to answer your questions.",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/Levi",
+			"deploy": "https://bit.ly/3NJUkb9",
+			"style": {
+				"border": "2px solid #53BF9D"
+			},
+			"color": {
+				"color": "#53BF9D"
+			},
+			"buttonCSS": {
+				"border": "1px solid #53BF9D"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "MongoDB, ExpressJS, NextJS, NodeJS, Solidity, EtherJS",
+			"title": "Secure Share dApp ⛓️",
+			"description": "A decentralized application that allows users to share files securely using blockchain technology.",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/SecureShareDapp",
+			"deploy": "https://securesharedapp.vercel.app/",
+			"style": {
+				"border": "2px solid #222831"
+			},
+			"color": {
+				"color": "#53BF9D"
+			},
+			"buttonCSS": {
+				"border": "1px solid #53BF9D"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "ExpressJS NodeJS MongoDB Stripe CSS EJS",
+			"title": "Auction App 💵",
+			"description": "Online Auction System, an e-commerce application to create and hold auctions on the web",
+			"platform": "GitHub",
+			"link": "https://github.com/Hritvik-Mohan/Auction-Project",
+			"deploy": "https://auctionapp-4bmz.onrender.com/",
+			"style": {
+				"border": "2px solid #5746C4"
+			},
+			"color": {
+				"color": "#0A0048"
+			},
+			"buttonCSS": {
+				"border": "1px solid #5746C4"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "Python Flask SQLite",
+			"title": "Blog Website 📝",
+			"description": "My Personal Blog Website",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/HarshitRVBlogsite",
+			"deploy": "https://harshitrvblog.onrender.com/",
+			"style": {
+				"border": "2px solid #764AF1"
+			},
+			"color": {
+				"color": "#764AF1"
+			},
+			"buttonCSS": {
+				"border": "1px solid #764AF1"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "ReactJS",
+			"title": "Food Cart App 🍔",
+			"description": "A food order app to demonstrate the cart functionality in ReactJS.",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/FoodOrderApp",
+			"deploy": "https://foodcartapp.netlify.app/",
+			"style": {
+				"border": "2px solid #CE195A"
+			},
+			"color": {
+				"color": "#690026"
+			},
+			"buttonCSS": {
+				"border": "1px solid #CE195A"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "ExpressJS NodeJS EJS",
+			"title": "Chat App 💬",
+			"description": "Chatapp for online chatting with friends",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/ChatApp",
+			"deploy": "https://chatroom-pldm.onrender.com/",
+			"style": {
+				"border": "2px solid #C4A146"
+			},
+			"color": {
+				"color": "#725200"
+			},
+			"buttonCSS": {
+				"border": "1px solid #C4A146"
+			}
+		},
+		{
+			"type": "web app",
+			"stack": "MongoDB, ExpressJS, ReactJS, NodeJS",
+			"title": "Sarcasm App 🤣",
+			"description": "A web app that give you random Chandler Bing sarcastic comments",
+			"platform": "GitHub",
+			"link": "https://github.com/HarshitRV/sarcasmapi-frontend",
+			"deploy": "https://sarcasmapi.netlify.app/",
+			"style": {
+				"border": "2px solid #CE195A"
+			},
+			"color": {
+				"color": "#690026"
+			},
+			"buttonCSS": {
+				"border": "1px solid #CE195A"
+			}
+		}
+	],
+	"education": [
+		{
+			"school": "Vellore Institute of Technology, Vellore",
+			"degree": "Master of Computer Application",
+			"duration": "2022 - 2024",
+			"institute": "Vellore Institute of Technology"
+		},
+		{
+			"school": "School Of Management Sciences, Varanasi",
+			"degree": "Bachelor of Computer Application",
+			"duration": "2019 - 2022",
+			"institute": "Mahatma Gandhi Kashi Vidyapith"
+		}
+	],
+	"experience": [
+		{
+			"company": "Radarr",
+			"role": "Software Engineer Intern",
+			"duration": "September 2023 - Present",
+			"location": "Bengaluru, IND",
+			"logo": "",
+			"link": "https://www.radarr.com/",
+			"color": {
+				"color": "#F65314"
+			},
+			"buttonCSS": {
+				"border": "1px solid #F65314"
+			}
+		}
+	]
+}

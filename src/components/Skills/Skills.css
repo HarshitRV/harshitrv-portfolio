@@ -1,0 +1,32 @@
+.skills-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* display: inline-block; */
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.skill {
+    color: #5944E4;
+    background-color: #e9e5ff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.edu-title {
+    line-height: 1.5;
+}
+
+.edu-institute {
+}
+
+.edu-duration {
+    opacity: 0.5;
+}

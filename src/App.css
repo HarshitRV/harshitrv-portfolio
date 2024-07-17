@@ -1,0 +1,55 @@
+#root {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+	font-family: "Inter", sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+section > h2 {
+	margin-top: 4rem;
+}
+
+section > div {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 2rem;
+}
+
+section > h2 {
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+
+	font-weight: 300;
+}
+
+.tabs {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.active-tab {
+	text-decoration: #5944e4 wavy underline;
+	text-underline-offset: 5px;
+}
+
+@media (min-width: 930px) {
+	section > div {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.tabs {
+		max-width: 600px;
+	}
+
+	section > h2 {
+		margin-bottom: 4rem;
+	}
+}
