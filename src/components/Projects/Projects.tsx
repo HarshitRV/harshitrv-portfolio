@@ -17,7 +17,7 @@ export default function Projects() {
 				throw new Error(errorMessage);
 			}
 
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			await new Promise((resolve) => setTimeout(resolve, 800));
 
 			const data = await response.json();
 
