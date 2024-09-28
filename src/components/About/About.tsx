@@ -8,7 +8,7 @@ function About() {
 			<div className="bio-img-text-container">
 				<img
 					className="bio-img"
-					src="https://media.licdn.com/dms/image/C4D03AQEaQ6R3Cru90A/profile-displayphoto-shrink_400_400/0/1656224199855?e=1726704000&v=beta&t=ucxNr_7ZU5QgAbe52abjMCx2QeoDJI3CaDLydAeHdkM"
+					src="https://i.imgur.com/gWP6gdd.jpeg"
 					alt="profile pic"
 				/>
 				<div className="bio-container">
