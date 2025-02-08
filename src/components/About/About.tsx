@@ -15,7 +15,7 @@ function About() {
 					<h2 className="bio-heading">Hi, I&apos;m Harshit Kr Vishwakarma.</h2>
 					<p>
 						Currently working as{" "}
-						<span className="active-tab">Associate Software Engineer</span> at{" "}
+						<span className="active-tab">Software Engineer</span> at{" "}
 						<a
 							className="genesys"
 							target="_blank"
