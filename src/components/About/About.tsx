@@ -25,8 +25,7 @@ function About() {
 						</a>
 						, completed my Master&apos;s of Computer Application from{" "}
 						<span className="vit-vellore">VIT Vellore</span> with{" "}
-						<span className="active-tab">9.1 CGPA</span>. I have a strong
-						passion for full-stack web development.{" "}
+						<span className="active-tab">9.1 CGPA</span>. I am well versed in full-stack web development.{" "}
 					</p>
 					<p>
 						I also have experience in creating decentralized application on
