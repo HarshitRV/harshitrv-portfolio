@@ -1,6 +1,6 @@
 import { createHashRouter } from "react-router-dom";
 import "./App.css";
-import Projects from "./components//Projects/Projects";
+import Projects from "./components/Projects/Projects";
 
 import Root from "./routes/root";
 import Index from "./components/Index/Index";
@@ -10,30 +10,30 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
 const router = createHashRouter([
-	{
-		path: "/",
-		element: <Root />,
-		errorElement: <>Something went wrong</>,
-		children: [
-			{
-				index: true,
-				element: <Index />,
-			},
-			{
-				path: "portfolio",
-				// loader: projectLoader,
-				element: <Projects />,
-			},
-		],
-	},
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <>Something went wrong</>,
+    children: [
+      {
+        index: true,
+        element: <Index />,
+      },
+      {
+        path: "portfolio",
+        // loader: projectLoader,
+        element: <Projects />,
+      },
+    ],
+  },
 ]);
 
 const App = () => {
-	return (
-		<QueryClientProvider client={queryClient}>
-			<RouterProvider router={router} />
-		</QueryClientProvider>
-	);
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 };
 
 export default App;
