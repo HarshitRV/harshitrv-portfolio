@@ -7,6 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "start": "node .output/server/index.mjs",
+    "deploy": "bash deploy.sh",
     "check": "tsc --noEmit",
     "test": "vitest run",
     "admin:hash": "node scripts/generate-admin-password-hash.mjs",
