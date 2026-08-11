@@ -31,6 +31,7 @@ set +a
 # ── 2. Pull latest code ──────────────────
 echo ""
 echo "→ Pulling latest changes..."
+git checkout pi
 git pull
 
 # ── 3. Install dependencies ──────────────
