@@ -5,6 +5,7 @@ APP_NAME="harshitrv-portfolio"
 APP_DIR="$(cd "$(dirname "$0")" && pwd)"
 PORT=3374
 PNPM="/home/harshitrvpi/.nvm/versions/node/v24.14.1/bin/pnpm"
+NODE="/home/harshitrvpi/.nvm/versions/node/v24.14.1/bin/node"
 
 export PATH="/home/harshitrvpi/.nvm/versions/node/v24.14.1/bin:$PATH"
 
@@ -20,10 +21,13 @@ if [[ ! -f .env ]]; then
   exit 1
 fi
 
-set -a
-# shellcheck disable=SC1091
-source .env
-set +a
+# Read through node so secrets containing `$` are not shell-expanded.
+read_env() {
+  env -u "$1" "$NODE" --env-file=.env -e "process.stdout.write(process.env.$1 ?? '')"
+}
+
+PROJECT_DATA_FILE="$(read_env PROJECT_DATA_FILE)"
+PROJECT_BACKUP_DIR="$(read_env PROJECT_BACKUP_DIR)"
 
 : "${PROJECT_DATA_FILE:?PROJECT_DATA_FILE must be set in .env}"
 : "${PROJECT_BACKUP_DIR:?PROJECT_BACKUP_DIR must be set in .env}"
@@ -63,7 +67,7 @@ fi
 # ── 7. Health check ──────────────────────
 echo ""
 echo "→ Waiting for server..."
-sleep 3
+sleep 5
 
 if curl -sf "http://127.0.0.1:$PORT" > /dev/null 2>&1; then
   echo "✓ Server is up at http://127.0.0.1:$PORT"
