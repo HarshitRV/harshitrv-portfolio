@@ -1,30 +1,69 @@
-# React + TypeScript + Vite
+# harshitrv.in
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Server-rendered portfolio and private project editor built with TanStack Start, React 19, Tailwind CSS, and shadcn/ui.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 24
+- pnpm 11
+- One Node process when project editing is enabled
 
-## Expanding the ESLint configuration
+## Local development
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json", "./tsconfig.app.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+```bash
+pnpm install
+pnpm dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The public site is available at `http://localhost:3000`. Project data is bootstrapped from `data/projects.seed.json` into the gitignored `.data/projects.json` file.
+
+Admin login requires a password hash:
+
+```bash
+read -s ADMIN_PASSWORD
+export ADMIN_PASSWORD
+pnpm admin:hash
+unset ADMIN_PASSWORD
+```
+
+Copy `.env.example` to `.env`, then set:
+
+- `ADMIN_USERNAME`
+- `ADMIN_PASSWORD_HASH` to the command output
+- `SESSION_SECRET` to at least 32 random characters
+- `APP_ORIGIN` to the exact public origin
+- `PROJECT_DATA_FILE` and `PROJECT_BACKUP_DIR` to absolute writable paths in production
+
+`TRUST_PROXY=true` may be used only when the Node port is exclusively reachable through a trusted reverse proxy that replaces forwarded client headers.
+
+## Project data
+
+The application is the sole writer of a versioned JSON document. It:
+
+- validates the full document before serving requests;
+- serializes mutations and rejects stale revisions;
+- writes through a temporary file and atomic rename;
+- keeps the latest 20 valid backups;
+- quarantines corrupt primary files and restores the newest valid backup.
+
+Mutable data must live outside the repository and `.output`. Do not run multiple application processes against the same JSON file.
+
+## Checks
+
+```bash
+pnpm fmt:check
+pnpm lint
+pnpm check
+pnpm test
+pnpm build
+```
+
+## Production artifact
+
+```bash
+pnpm install --frozen-lockfile
+pnpm build
+pnpm start
+```
+
+The build emits `.output/server/index.mjs` and `.output/public`. The server listens on `NITRO_HOST`/`NITRO_PORT`; TLS termination and deployment automation are intentionally outside this repository.

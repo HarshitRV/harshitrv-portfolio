@@ -10,6 +10,13 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.output
+.data
+.playwright-cli
+coverage
+.env
+.env.*
+!.env.example
 *.local
 
 # Editor directories and files
