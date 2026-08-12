@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "revision": 0,
+  "projects": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "title": "react-highlightable-input ✨",
+      "description": "A custom React input component that allows highlighting of specific text as it is typed in.",
+      "type": "npm package",
+      "technologies": ["Node.js", "React", "Vite", "TypeScript"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/react-highlightable-input"
+      },
+      "demoUrl": "https://npmjs.com/package/react-highlightable-input",
+      "accent": "red",
+      "published": true,
+      "order": 0,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "title": "X-Bot: Automate tweets 🕊️",
+      "description": "A cron service to automatically generate and post tweets on X.",
+      "type": "web app",
+      "technologies": ["Express.js", "Node.js", "twitter-api-v2"],
+      "source": {
+        "label": "GitLab",
+        "url": "https://gitlab.com/harshithrv/x-bot"
+      },
+      "demoUrl": "https://x-bot-vwrg.onrender.com/status",
+      "accent": "blue",
+      "published": true,
+      "order": 1,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "title": "Levi - Discord Bot 🤖",
+      "description": "A Discord bot equipped with ChatGPT to answer your questions.",
+      "type": "discord app",
+      "technologies": ["Express.js", "Node.js", "Discord.js", "OpenAI"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/Levi"
+      },
+      "demoUrl": "https://bit.ly/3NJUkb9",
+      "accent": "green",
+      "published": true,
+      "order": 2,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "title": "Secure Share dApp ⛓️",
+      "description": "A decentralized application that allows users to share files securely using blockchain technology.",
+      "type": "web app",
+      "technologies": ["MongoDB", "Express.js", "Next.js", "Node.js", "Solidity", "ethers.js"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/SecureShareDapp"
+      },
+      "demoUrl": "https://securesharedapp.vercel.app/",
+      "accent": "green",
+      "published": true,
+      "order": 3,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "55555555-5555-4555-8555-555555555555",
+      "title": "Auction App 💵",
+      "description": "An online auction system for creating and holding auctions on the web.",
+      "type": "web app",
+      "technologies": ["Express.js", "Node.js", "MongoDB", "Stripe", "CSS", "EJS"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/Hritvik-Mohan/Auction-Project"
+      },
+      "demoUrl": "https://auctionapp-4bmz.onrender.com/",
+      "accent": "violet",
+      "published": true,
+      "order": 4,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "66666666-6666-4666-8666-666666666666",
+      "title": "Blog Website 📝",
+      "description": "My personal blog website.",
+      "type": "web app",
+      "technologies": ["Python", "Flask", "SQLite"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/HarshitRVBlogsite"
+      },
+      "demoUrl": "https://harshitrvblog.onrender.com/",
+      "accent": "violet",
+      "published": true,
+      "order": 5,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777777",
+      "title": "Food Cart App 🍔",
+      "description": "A food-ordering app demonstrating cart functionality in React.",
+      "type": "web app",
+      "technologies": ["React"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/FoodOrderApp"
+      },
+      "demoUrl": "https://foodcartapp.netlify.app/",
+      "accent": "red",
+      "published": true,
+      "order": 6,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "88888888-8888-4888-8888-888888888888",
+      "title": "Chat App 💬",
+      "description": "A web application for chatting online with friends.",
+      "type": "web app",
+      "technologies": ["Express.js", "Node.js", "EJS"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/ChatApp"
+      },
+      "demoUrl": "https://chatroom-pldm.onrender.com/",
+      "accent": "amber",
+      "published": true,
+      "order": 7,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "99999999-9999-4999-8999-999999999999",
+      "title": "Sarcasm App 🤣",
+      "description": "A web app that gives you random Chandler Bing sarcastic comments.",
+      "type": "web app",
+      "technologies": ["MongoDB", "Express.js", "React", "Node.js"],
+      "source": {
+        "label": "GitHub",
+        "url": "https://github.com/HarshitRV/sarcasmapi-frontend"
+      },
+      "demoUrl": "https://sarcasmapi.netlify.app/",
+      "accent": "red",
+      "published": true,
+      "order": 8,
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "updatedAt": "2026-08-11T00:00:00.000Z"
+    }
+  ]
+}
